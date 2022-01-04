@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>potepan課題　電卓</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<table class="calculator">
+<tr>
+<td colspan="4">
+<input class="block" type="text" id="result" value="0" disabled>
+</td>
+</tr>
+
+  <tr>
+    <td> 
+      <input class ="button" type="button" value="7" onclick="push(this.value)">
+    </td>
+    <td>
+      <input class ="button" type="button" value="8" onclick="push(this.value)">
+    </td>
+    <td>
+      <input class ="button" type="button" value="9" onclick="push(this.value)">
+    </td>
+    <td>
+      <input class ="button" type="button" value="+" onclick="push(this.value)">
+    </td>
+  </tr>
+
+  <tr>
+    <td> 
+      <input class ="button" type="button" value="4" onclick="push(this.value)">
+    </td>
+    <td>
+      <input class ="button" type="button" value="5" onclick="push(this.value)">
+    </td>
+    <td>
+      <input class ="button" type="button" value="6" onclick="push(this.value)">
+    </td>
+    <td>
+      <input class ="button" type="button" value="-" onclick="push(this.value)">
+    </td>
+  </tr>
+
+  <tr>
+    <td> 
+      <input class ="button" type="button" value="1" onclick="push(this.value)">
+    </td>
+    <td>
+      <input class ="button" type="button" value="2" onclick="push(this.value)">
+    </td>
+    <td>
+      <input class ="button" type="button" value="3" onclick="push(this.value)">
+    </td>
+   <td>
+      <input class ="button" type="button" value="*" onclick="push(this.value)">
+    </td>
+  </tr>
+
+  <tr>
+    <td> 
+      <input class ="button" type="button" value="0" onclick="push(this.value)">
+    </td>
+    <td>
+      <input class ="button" type="button" value="00" onclick="push('0');push('0')">
+    </td>
+
+   <td>
+      <input class ="button" type="button" value="." onclick="push(this.value)">
+    </td>
+   <td>
+      <input class ="button" type="button" value="/" onclick="push(this.value)">
+    </td>
+  </tr>
+
+   <tr>
+    <td colspan="2">
+      <input class ="double_button" type="button" value="AC" onclick="reset()">
+    </td>
+    <td colspan="2">
+      <input class ="double_button" type="button" value="=" onclick="calc()">
+    </td>
+  </th>
+
+ </table>
+ <script src="main.js"></script>
+</body>
+</html>
